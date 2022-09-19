@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="5" total="16" passed="10" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-09-05T12:31:55 IST" name="Suite" finished-at="2022-09-05T12:31:55 IST" duration-ms="344">
+    <groups>
+      <group name="Smoke">
+        <method signature="GoldLoan.ManOrnamentLoan()[pri:0, instance:test.GoldLoan@4de4b452]" name="ManOrnamentLoan" class="test.GoldLoan"/>
+        <method signature="HomeLoan.PlotLoan()[pri:0, instance:test.HomeLoan@6bedbc4d]" name="PlotLoan" class="test.HomeLoan"/>
+      </group> <!-- Smoke -->
+    </groups>
+    <test started-at="2022-09-05T12:31:55 IST" name="Test" finished-at="2022-09-05T12:31:55 IST" duration-ms="170">
+      <class name="test.GoldLoan">
+        <test-method is-config="true" signature="BT()[pri:0, instance:test.GoldLoan@4de4b452]" started-at="2022-09-05T12:31:55 IST" name="BT" finished-at="2022-09-05T12:31:55 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BT -->
+        <test-method signature="GoldLogin(java.lang.String,java.lang.String)[pri:0, instance:test.GoldLoan@4de4b452]" started-at="2022-09-05T12:31:55 IST" name="GoldLogin" data-provider="getdata" finished-at="2022-09-05T12:31:55 IST" duration-ms="4" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[FirstUsername]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[FirstPassword]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GoldLogin -->
+        <test-method signature="GoldLogin(java.lang.String,java.lang.String)[pri:0, instance:test.GoldLoan@4de4b452]" started-at="2022-09-05T12:31:55 IST" name="GoldLogin" data-provider="getdata" finished-at="2022-09-05T12:31:55 IST" duration-ms="11" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[SecondUsername]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[SecondPassword]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GoldLogin -->
+        <test-method signature="GoldLogin(java.lang.String,java.lang.String)[pri:0, instance:test.GoldLoan@4de4b452]" started-at="2022-09-05T12:31:55 IST" name="GoldLogin" data-provider="getdata" finished-at="2022-09-05T12:31:55 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ThirdUsername]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[ThirdPassword]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GoldLogin -->
+        <test-method signature="ManOrnamentLoan()[pri:0, instance:test.GoldLoan@4de4b452]" started-at="2022-09-05T12:31:55 IST" name="ManOrnamentLoan" finished-at="2022-09-05T12:31:55 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ManOrnamentLoan -->
+        <test-method signature="WomenOrnamentLoan()[pri:0, instance:test.GoldLoan@4de4b452]" started-at="2022-09-05T12:31:55 IST" name="WomenOrnamentLoan" finished-at="2022-09-05T12:31:55 IST" duration-ms="7" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- WomenOrnamentLoan -->
+        <test-method signature="ChildOrnamentLoan()[pri:0, instance:test.GoldLoan@4de4b452]" started-at="2022-09-05T12:31:55 IST" name="ChildOrnamentLoan" finished-at="2022-09-05T12:31:55 IST" depends-on-methods="test.GoldLoan.GoldLogin" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ChildOrnamentLoan -->
+      </class> <!-- test.GoldLoan -->
+      <class name="test.HomeLoan">
+        <test-method is-config="true" signature="BC()[pri:0, instance:test.HomeLoan@6bedbc4d]" started-at="2022-09-05T12:31:55 IST" name="BC" finished-at="2022-09-05T12:31:55 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BC -->
+        <test-method signature="FlatLoan()[pri:0, instance:test.HomeLoan@6bedbc4d]" started-at="2022-09-05T12:31:55 IST" name="FlatLoan" finished-at="2022-09-05T12:31:55 IST" duration-ms="8" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FlatLoan -->
+        <test-method signature="HomeLogin(java.lang.String)[pri:0, instance:test.HomeLoan@6bedbc4d]" started-at="2022-09-05T12:31:55 IST" name="HomeLogin" finished-at="2022-09-05T12:31:55 IST" duration-ms="0" status="FAIL">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'URL' is required by @Test on method HomeLogin but has not been marked @Optional or defined
+in D:\Sel_Aug_22\TestNGTutorials\testng.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'URL' is required by @Test on method HomeLogin but has not been marked @Optional or defined
+in D:\Sel_Aug_22\TestNGTutorials\testng.xml
+at org.testng.internal.Parameters.createParams(Parameters.java:270)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:358)
+at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:884)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:740)
+at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:59)
+at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:38)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:791)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- HomeLogin -->
+        <test-method signature="PlotLoan()[pri:0, instance:test.HomeLoan@6bedbc4d]" started-at="2022-09-05T12:31:55 IST" name="PlotLoan" finished-at="2022-09-05T12:31:55 IST" duration-ms="6" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PlotLoan -->
+        <test-method is-config="true" signature="AC()[pri:0, instance:test.HomeLoan@6bedbc4d]" started-at="2022-09-05T12:31:55 IST" name="AC" finished-at="2022-09-05T12:31:55 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AC -->
+        <test-method is-config="true" signature="AT()[pri:0, instance:test.HomeLoan@6bedbc4d]" started-at="2022-09-05T12:31:55 IST" name="AT" finished-at="2022-09-05T12:31:55 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AT -->
+      </class> <!-- test.HomeLoan -->
+    </test> <!-- Test -->
+    <test started-at="2022-09-05T12:31:55 IST" name="Vehical Loan" finished-at="2022-09-05T12:31:55 IST" duration-ms="27">
+      <class name="test.GoldLoan">
+        <test-method is-config="true" signature="AS()[pri:0, instance:test.GoldLoan@4de4b452]" started-at="2022-09-05T12:31:55 IST" name="AS" finished-at="2022-09-05T12:31:55 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AS -->
+      </class> <!-- test.GoldLoan -->
+      <class name="test.VehicalLoan">
+        <test-method is-config="true" signature="BM()[pri:0, instance:test.VehicalLoan@6cd28fa7]" started-at="2022-09-05T12:31:55 IST" name="BM" finished-at="2022-09-05T12:31:55 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BM -->
+        <test-method signature="BikeLoan()[pri:0, instance:test.VehicalLoan@6cd28fa7]" started-at="2022-09-05T12:31:55 IST" name="BikeLoan" finished-at="2022-09-05T12:31:55 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BikeLoan -->
+        <test-method is-config="true" signature="BM()[pri:0, instance:test.VehicalLoan@6cd28fa7]" started-at="2022-09-05T12:31:55 IST" name="BM" finished-at="2022-09-05T12:31:55 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BM -->
+        <test-method is-config="true" signature="AM()[pri:0, instance:test.VehicalLoan@6cd28fa7]" started-at="2022-09-05T12:31:55 IST" name="AM" finished-at="2022-09-05T12:31:55 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AM -->
+        <test-method signature="CarLoan()[pri:0, instance:test.VehicalLoan@6cd28fa7]" started-at="2022-09-05T12:31:55 IST" name="CarLoan" finished-at="2022-09-05T12:31:55 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CarLoan -->
+        <test-method is-config="true" signature="AM()[pri:0, instance:test.VehicalLoan@6cd28fa7]" started-at="2022-09-05T12:31:55 IST" name="AM" finished-at="2022-09-05T12:31:55 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AM -->
+      </class> <!-- test.VehicalLoan -->
+      <class name="test.HomeLoan">
+        <test-method is-config="true" signature="BS()[pri:0, instance:test.HomeLoan@6bedbc4d]" started-at="2022-09-05T12:31:55 IST" name="BS" finished-at="2022-09-05T12:31:55 IST" duration-ms="10" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BS -->
+      </class> <!-- test.HomeLoan -->
+    </test> <!-- Vehical Loan -->
+  </suite> <!-- Suite -->
+</testng-results>
